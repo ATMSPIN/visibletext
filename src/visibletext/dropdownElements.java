@@ -23,8 +23,11 @@ public class dropdownElements {
 	  public void visibleindex() {
 			 driver.get("https://demo.guru99.com/test/newtours/register.php");
 			 driver.findElement(By.name("lastName")).sendKeys("Reddy");
+			 driver.findElement(By.name("city")).sendKeys("Tirupati");
 			 Select dropdownCountry = new Select(driver.findElement(By.name("country")));
 			 dropdownCountry.selectByIndex(12);
+			 
+			
 			 
 	  }
   
